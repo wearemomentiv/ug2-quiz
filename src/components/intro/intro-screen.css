@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+
+.intro-screen-background {
+    background-image: url("/src/assets/images/intro-screen-bg.png");
+    background-size: cover;
+}

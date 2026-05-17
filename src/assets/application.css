@@ -1,0 +1,15 @@
+@import url("https://use.typekit.net/ugv0bcq.css");
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue-dark: #4298b5;
+  --color-brand-blue-light: #92c1e9;
+  --color-brand-burgundy: #612141;
+  --color-brand-dark-red: #9b2242;
+  --color-brand-light-red: #e04e39;
+  --color-brand-slate: #4e5b73;
+  --color-brand-warm-grey: #eae8e4;
+
+  --font-sans: "freight-sans-pro", verdana, sans-serif;
+  --font-sans-light: "freight-sans-pro-lights", verdana, sans-serif;
+}
