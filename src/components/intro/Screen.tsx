@@ -12,7 +12,7 @@ interface IntroScreenProps {
 
 export function IntroScreen({ onStart }: IntroScreenProps) {
   return (
-    <Wrapper className="intro-screen-background h-full bg-brand-burgundy">
+    <Wrapper className="intro-screen-background h-full">
       <PageHeader>
         <p className="text-lg text-brand-warm-grey/50 font-light uppercase tracking-widest">The New Standard of Facility Services</p>
       </PageHeader>
@@ -33,7 +33,7 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
 
       <div className="flex justify-between gap-x-4">
         {Object.entries(ARCHETYPES).map(([key, value], index: number) => (
-          <Archetype key={key} index={`0${index + 1}`} name={value.name} factor={value.factor} />
+          <Archetype key={key} index={`0${index + 1}`} name={value.name} factor={value.factor} color={value.color} />
         ))}
       </div>
 

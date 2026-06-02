@@ -14,7 +14,7 @@ interface QuestionScreenProps {
 export function QuestionScreen({ index, label, question, answers, onAnswer }: QuestionScreenProps) {
   return (
     <div className="flex flex-col h-full">
-      <Wrapper className="bg-brand-burgundy">
+      <Wrapper className="bg-brand-slate">
         <PageHeader>
           <div className="flex items-center justify-between gap-x-4">
             <p className="text-lg text-brand-warm-grey/50 font-medium uppercase tracking-widest">Question</p>

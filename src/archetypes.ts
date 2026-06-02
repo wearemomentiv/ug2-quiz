@@ -1,25 +1,38 @@
+import bridgeBuilderIcon from "@/assets/images/bridge-builder-archetype.png";
+import excellenceAcceleratorIcon from "@/assets/images/excellence-accelerator-archetype.png";
+import visionaryIcon from "@/assets/images/the-visionary-archetype.png";
+import conflictSolverIcon from "@/assets/images/conflict-solver-archetype.png";
+
 export const ARCHETYPES = {
   trust: {
     name: "Bridge Builder",
     factor: "Trust",
+    color: "bg-brand-burgundy",
+    icon: bridgeBuilderIcon,
     blurb:
       "You are the mortar between the bricks, strengthening bonds between others to create unbreakable bonds for resilient relationships.",
   },
   expertise: {
     name: "Excellence Accelerator",
     factor: "Expertise",
+    color: "bg-brand-light-red",
+    icon: excellenceAcceleratorIcon,
     blurb:
       "You leverage your broad experience to see the whole person and find ways to inspire others' best work.",
   },
   innovation: {
     name: "Visionary",
     factor: "Innovation",
+    color: "bg-brand-dark-red",
+    icon: visionaryIcon,
     blurb:
       "Whether coming up with a fresh approach of your own or tapping others for new solutions, you are always thinking outside the box.",
   },
   commitment: {
     name: "Conflict Solver",
     factor: "Commitment",
+    color: "bg-brand-blue-dark",
+    icon: conflictSolverIcon,
     blurb:
       "You aren't afraid to investigate differences, and you are skilled at finding common ground to build consensus.",
   },
