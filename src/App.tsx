@@ -7,7 +7,6 @@ import { ResultScreen } from "@/components/result/Screen"
 
 const QUESTIONS = [
   {
-    label: "OOPS.",
     q: "You spot someone else's error in a critical report. You:",
     a: [
       { text: "Invite the person to join you in fixing it together.", archetype: "trust" },
@@ -18,7 +17,6 @@ const QUESTIONS = [
     ],
   },
   {
-    label: "OUCH.",
     q: "In a meeting, a co-worker says something passive-aggressive about your idea. You:",
     a: [
       { text: "Approach them after the meeting to discuss one-on-one.", archetype: "trust" },
@@ -29,7 +27,6 @@ const QUESTIONS = [
     ],
   },
   {
-    label: "OH NO.",
     q: "Your most effective problem solving happens:",
     a: [
       { text: "During an informal chat with others.", archetype: "trust" },
@@ -40,7 +37,6 @@ const QUESTIONS = [
     ],
   },
   {
-    label: "AH HA.",
     q: "You are most excited by solutions and ideas that are:",
     a: [
       { text: "Rough sketches that need a team effort.", archetype: "trust" },
@@ -51,8 +47,7 @@ const QUESTIONS = [
     ],
   },
   {
-    label: "WOW.",
-    q: "A customer mentions needing extra help with a major project \u2014 something that could be a great opportunity for you. You:",
+    q: "A colleague mentions needing extra help with a major project \u2014 something that could be a great opportunity for you. You:",
     a: [
       { text: "Ask them more detailed questions about their needs.", archetype: "trust" },
       { text: "Acknowledge potential challenges as a way to build trust.", archetype: "commitment" },
@@ -91,7 +86,6 @@ function App() {
   return (
     <QuestionScreen
       index={currentQuestion}
-      label={QUESTIONS[currentQuestion - 1].label}
       question={QUESTIONS[currentQuestion - 1].q}
       answers={QUESTIONS[currentQuestion - 1].a.map((a) => a.text)}
       onAnswer={(index) => {

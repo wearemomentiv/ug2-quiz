@@ -9,8 +9,7 @@ export function Archetype({ index, name, factor, color }: ArchetypeProps) {
   return (
     <div className={`flex flex-col justify-between flex-1 gap-4 border-t-white/40 border-t-4 p-4 ${color}`}>
       <div>
-        <span className="text-white/70 font-mono font-sm font-light">{index}</span>
-        <h3 className="text-base text-white font-medium uppercase tracking-widest">{factor}</h3>
+        <h3 className="text-lg text-white font-medium uppercase tracking-widest">{factor}</h3>
       </div>
       <span className="text-white text-3xl font-bold tracking-tight">{name}</span>
     </div>

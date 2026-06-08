@@ -1,4 +1,3 @@
-import { Heading } from "@/components/Heading"
 import { PageHeader } from "@/components/PageHeader"
 import { Wrapper } from "@/components/Wrapper"
 import { ARCHETYPES } from "@/archetypes"
@@ -18,13 +17,13 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
       </PageHeader>
 
       <div className="flex flex-col gap-1 w-3/5">
-        <Heading>Pop Quiz</Heading>
         <h1 className="text-8xl text-brand-warm-grey font-bold">What&rsquo;s your Partnership Personality?</h1>
       </div>
 
       <div className="flex flex-col gap-4">
         <p className="text-2xl text-brand-warm-grey/70 font-sans-light font-light">
-          At UG2, we meet our customers where they are. There are different dynamics at play in every relationship. Learning how people prefer to operate and communicate helps ground the relationship in trust.
+          At UG2, we meet our customers where they are. There are different dynamics at play in every relationship.<br />
+          Learning how people prefer to operate and communicate helps ground the relationship in trust.
         </p>
         <p className="text-2xl text-brand-warm-grey font-medium">
           Take the quiz to discover your Partner Archetype.

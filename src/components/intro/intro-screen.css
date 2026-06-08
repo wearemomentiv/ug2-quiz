@@ -5,17 +5,4 @@
     overflow: hidden;
     background-color: var(--color-brand-slate);
     background-repeat: no-repeat;
-    background-image:
-        radial-gradient(
-            circle at 96% -4%,
-            var(--color-brand-burgundy) 0,
-            var(--color-brand-burgundy) 30vw,
-            transparent 30vw
-        ),
-        radial-gradient(
-            circle at 2% 104%,
-            color-mix(in srgb, var(--color-brand-blue-dark) 28%, transparent) 0,
-            color-mix(in srgb, var(--color-brand-blue-dark) 28%, transparent) 14vw,
-            transparent 14vw
-        );
 }

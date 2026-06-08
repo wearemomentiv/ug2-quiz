@@ -1,17 +1,15 @@
-import { Heading } from "@/components/Heading";
 import { PageHeader } from "@/components/PageHeader";
 import { Wrapper } from "@/components/Wrapper";
 import { AnswerButton } from "@/components/question/AnswerButton";
 
 interface QuestionScreenProps {
   index: number;
-  label: string;
   question: string;
   answers: string[];
   onAnswer: (index: number) => void;
 }
 
-export function QuestionScreen({ index, label, question, answers, onAnswer }: QuestionScreenProps) {
+export function QuestionScreen({ index, question, answers, onAnswer }: QuestionScreenProps) {
   return (
     <div className="flex flex-col h-full">
       <Wrapper className="bg-brand-slate">
@@ -23,7 +21,6 @@ export function QuestionScreen({ index, label, question, answers, onAnswer }: Qu
         </PageHeader>
 
         <div className="flex flex-col gap-1 w-full">
-          <Heading>{label}</Heading>
           <h1 className="text-6xl text-brand-warm-grey font-bold">{question}</h1>
         </div>
       </Wrapper>
