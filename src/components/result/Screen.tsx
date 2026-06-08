@@ -29,7 +29,7 @@ export function ResultScreen({ result, onRestart }: ResultScreenProps) {
       <div className="flex items-center justify-between gap-12">
         <div className="flex flex-col gap-8 w-3/5">
           <div className="flex flex-col gap-2">
-            <h2 className="text-base text-brand-warm-grey/70 font-medium uppercase tracking-widest">
+            <h2 className="text-xl text-brand-warm-grey/70 font-medium uppercase tracking-widest">
               {leadIn}
             </h2>
             <h1 className="text-8xl text-brand-warm-grey font-bold">
