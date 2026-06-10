@@ -31,8 +31,8 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
       </div>
 
       <div className="flex justify-between gap-x-4">
-        {Object.entries(ARCHETYPES).map(([key, value], index: number) => (
-          <Archetype key={key} index={`0${index + 1}`} name={value.name} factor={value.factor} color={value.color} />
+        {Object.entries(ARCHETYPES).map(([key, value]) => (
+          <Archetype key={key} name={value.name} factor={value.factor} color={value.color} />
         ))}
       </div>
 
