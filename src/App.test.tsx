@@ -16,6 +16,13 @@ async function answerAll(user: User, answerIndex: number) {
   for (let q = 0; q < 5; q++) {
     const buttons = screen.getAllByRole("button");
     await user.click(buttons[answerIndex]);
+    // The selected answer is briefly highlighted before advancing, so wait
+    // for the next question (or the result screen) before continuing.
+    if (q < 4) {
+      await screen.findByText(`${q + 2} / 5`);
+    } else {
+      await screen.findByText(/your result/i);
+    }
   }
 }
 
@@ -35,7 +42,7 @@ describe("App quiz flow", () => {
 
     expect(screen.getByText("1 / 5")).toBeInTheDocument();
     await user.click(screen.getAllByRole("button")[0]);
-    expect(screen.getByText("2 / 5")).toBeInTheDocument();
+    expect(await screen.findByText("2 / 5")).toBeInTheDocument();
   });
 
   it("answering all A's yields the Bridge Builder result", async () => {

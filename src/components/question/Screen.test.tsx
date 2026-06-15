@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { QuestionScreen } from "@/components/question/Screen";
 
@@ -39,6 +39,6 @@ describe("QuestionScreen", () => {
 
     await user.click(screen.getByText("Third option"));
 
-    expect(onAnswer).toHaveBeenCalledExactlyOnceWith(2);
+    await waitFor(() => expect(onAnswer).toHaveBeenCalledExactlyOnceWith(2));
   });
 });

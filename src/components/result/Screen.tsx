@@ -21,7 +21,7 @@ export function ResultScreen({ result, onRestart }: ResultScreenProps) {
   return (
     <Wrapper className={`${archetype.color} h-full justify-between`}>
       <PageHeader>
-        <p className="text-lg text-brand-warm-grey/50 font-medium uppercase tracking-widest">
+        <p className="text-lg text-white/50 font-medium uppercase tracking-widest">
           Your Result
         </p>
       </PageHeader>
@@ -29,18 +29,18 @@ export function ResultScreen({ result, onRestart }: ResultScreenProps) {
       <div className="flex items-center justify-between gap-12">
         <div className="flex flex-col gap-8 w-3/5">
           <div className="flex flex-col gap-2">
-            <h2 className="text-xl text-brand-warm-grey/70 font-medium uppercase tracking-widest">
+            <h2 className="text-xl text-white/70 font-medium uppercase tracking-widest">
               {leadIn}
             </h2>
-            <h1 className="text-8xl text-brand-warm-grey font-bold">
+            <h1 className="text-8xl text-white font-bold">
               {archetype.name}
             </h1>
-            <p className="text-xl text-brand-warm-grey/70 font-sans-light font-light mt-2">
+            <p className="text-3xl text-white font-sans-light font-light mt-2">
               {archetype.blurb}
             </p>
           </div>
 
-          <p className="text-2xl text-brand-warm-grey font-medium">
+          <p className="text-2xl text-white font-medium">
             Whatever {closingMix} of skills and insights you bring to a
             partnership, we appreciate you. Let&rsquo;s meet wherever you are and
             work up something great together{closingPunctuation}
@@ -55,7 +55,7 @@ export function ResultScreen({ result, onRestart }: ResultScreenProps) {
       </div>
 
       <div className="flex items-center justify-between">
-        <p className="text-lg text-brand-warm-grey/50 font-medium uppercase tracking-widest">
+        <p className="text-lg text-white/50 font-medium uppercase tracking-widest">
           The New Standard of Facility Services
         </p>
         <button

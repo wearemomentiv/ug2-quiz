@@ -13,19 +13,19 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
   return (
     <Wrapper className="intro-screen-background h-full">
       <PageHeader>
-        <p className="text-lg text-brand-warm-grey/50 font-light uppercase tracking-widest">The New Standard of Facility Services</p>
+        <p className="text-lg text-white/50 font-light uppercase tracking-widest">The New Standard of Facility Services</p>
       </PageHeader>
 
       <div className="flex flex-col gap-1 w-3/5">
-        <h1 className="text-8xl text-brand-warm-grey font-bold">What&rsquo;s your Partnership Personality?</h1>
+        <h1 className="text-8xl text-white font-bold">What&rsquo;s your Partnership Personality?</h1>
       </div>
 
       <div className="flex flex-col gap-4">
-        <p className="text-2xl text-brand-warm-grey/70 font-sans-light font-light">
+        <p className="text-2xl text-white/70 font-sans-light font-light">
           At UG2, we meet our customers where they are. There are different dynamics at play in every relationship.<br />
           Learning how people prefer to operate and communicate helps ground the relationship in trust.
         </p>
-        <p className="text-2xl text-brand-warm-grey font-medium">
+        <p className="text-2xl text-white font-medium">
           Take the quiz to discover your Partner Archetype.
         </p>
       </div>
@@ -37,7 +37,7 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
       </div>
 
       <div className="flex items-center justify-between">
-        <p className="text-lg text-brand-warm-grey/50 font-medium uppercase tracking-widest">5 Questions &middot; about 2 minutes</p>
+        <p className="text-lg text-white/50 font-medium uppercase tracking-widest">5 Questions &middot; about 2 minutes</p>
         <button
           onClick={onStart}
           className="bg-brand-warm-grey text-brand-burgundy px-6 py-4 text-xl font-bold uppercase tracking-wide flex items-center gap-x-2">

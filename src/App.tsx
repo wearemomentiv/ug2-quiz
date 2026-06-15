@@ -85,6 +85,7 @@ function App() {
 
   return (
     <QuestionScreen
+      key={currentQuestion}
       index={currentQuestion}
       question={QUESTIONS[currentQuestion - 1].q}
       answers={QUESTIONS[currentQuestion - 1].a.map((a) => a.text)}
