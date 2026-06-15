@@ -11,7 +11,7 @@ interface QuestionScreenProps {
   onAnswer: (index: number) => void;
 }
 
-const SELECTION_HIGHLIGHT_MS = 450;
+const SELECTION_HIGHLIGHT_MS = 700;
 
 export function QuestionScreen({ index, question, answers, onAnswer }: QuestionScreenProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);

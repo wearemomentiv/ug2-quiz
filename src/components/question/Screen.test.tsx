@@ -5,16 +5,15 @@ import { QuestionScreen } from "@/components/question/Screen";
 
 const baseProps = {
   index: 2,
-  label: "OUCH.",
   question: "A tricky situation arises. You:",
   answers: ["First option", "Second option", "Third option", "Fourth option"],
 };
 
 describe("QuestionScreen", () => {
-  it("renders the label, question, and progress indicator", () => {
+  it("renders the question and progress indicator", () => {
     render(<QuestionScreen {...baseProps} onAnswer={() => {}} />);
 
-    expect(screen.getByText("OUCH.")).toBeInTheDocument();
+    expect(screen.getByText("Question")).toBeInTheDocument();
     expect(
       screen.getByRole("heading", { name: baseProps.question })
     ).toBeInTheDocument();

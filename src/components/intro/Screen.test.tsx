@@ -11,7 +11,7 @@ describe("IntroScreen", () => {
     expect(
       screen.getByRole("heading", { name: /partnership personality/i })
     ).toBeInTheDocument();
-    expect(screen.getByText(/pop quiz/i)).toBeInTheDocument();
+    expect(screen.getByText(/take the quiz/i)).toBeInTheDocument();
     expect(screen.getByText(/5 questions/i)).toBeInTheDocument();
   });
 
